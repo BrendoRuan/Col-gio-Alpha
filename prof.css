@@ -1,0 +1,46 @@
+/* Define a fonte principal para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Adiciona uma margem inferior ao formulário */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para botões */
+button {
+    /* Cor de fundo */
+    background-color: #4CAF50;
+    /* Cor do texto */
+    color: white;
+    /* Preenchimento interno */
+    padding: 8px 16px;
+    /* Remove a borda padrão do botão */
+    border: none;
+    /* Define o cursor ao pairar sobre o botão */
+    cursor: pointer;
+    /* Efeito de transição suave durante 0.3 segundos */
+    transition: 0.3s;
+}
+
+/* Efeito de cor ao pairar sobre o botão */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Remove estilos padrão de lista e ajusta o preenchimento */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para itens de lista */
+li {
+    /* Preenchimento interno e espaçamento inferior */
+    padding: 10px;
+    margin-bottom: 7px;
+    /* Cor de fundo e borda dos itens da lista */
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}

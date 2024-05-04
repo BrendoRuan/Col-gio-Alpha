@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta  nome = "description" content="texto,texto,texto">
+<meta nome ="viewport" content="Width=device=width, initial-scalet=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta nome="keywords" content="programação,html,css,javascript">
+<meta name="Brendo Ruan" contente="faculdade alpha">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Aluno</title>
+
+    <style>
+        /* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo da página */
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
+    background-color: #f5f5f5; /* Define a cor de fundo do corpo da página */
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    width: 100%; /* Define a largura do contêiner como 100% da largura do elemento pai */
+    height: 100vh; /* Define a altura do contêiner como 100% da altura da janela de visualização (viewport) */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilos para a área de notas */
+.notas {
+    background-color: #ffffff; /* Define a cor de fundo da área de notas */
+    padding: 20px; /* Adiciona preenchimento interno de 20 pixels à área de notas */
+    border-radius: 10px; /* Adiciona bordas arredondadas de 10 pixels à área de notas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à área de notas */
+}
+
+/* Estilos para o título h1 dentro da área de notas */
+h1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels ao título h1 */
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%; /* Define a largura da tabela como 100% do contêiner pai */
+    border-collapse: collapse; /* Remove as bordas entre as células da tabela */
+}
+
+/* Estilos para as células de dados (.td1) da tabela */
+.td1 {
+    border: 1px solid #ddd; /* Adiciona uma borda de 1 pixel com cor #ddd às células de dados */
+    padding: 8px; /* Adiciona preenchimento interno de 8 pixels às células de dados */
+    text-align: left; /* Alinha o texto à esquerda nas células de dados */
+}
+
+/* Estilos para as células de cabeçalho (.th1) da tabela */
+.th1 {
+    background-color: #4CAF50; /* Define a cor de fundo das células de cabeçalho */
+    color: white; /* Define a cor do texto nas células de cabeçalho como branco */
+}
+
+/* Estilos para linhas alternadas (.tr1:nth-child(even)) da tabela */
+.tr1:nth-child(even) {
+    background-color: #f2f2f2; /* Define a cor de fundo das linhas alternadas */
+}
+
+/* Efeito de hover nas linhas da tabela (.tr1:hover) */
+.tr1:hover {
+    background-color: #ddd; /* Define a cor de fundo ao passar o mouse sobre as linhas */
+}
+
+/* Estilos para links de navegação com a classe .menu-hover */
+.menu-hover {
+    color: #fff; /* Define a cor do texto dos links de navegação como branco */
+    padding: 10px; /* Adiciona preenchimento interno de 10 pixels aos links de navegação */
+    width: 10px; /* Define a largura dos links de navegação como 10 pixels (possivelmente um erro, deve ser ajustado) */
+    height: 10px; /* Define a altura dos links de navegação como 10 pixels (possivelmente um erro, deve ser ajustado) */
+    border-radius: 25px; /* Adiciona bordas arredondadas de 25 pixels aos links de navegação */
+    background-color: #0056b3; /* Define a cor de fundo dos links de navegação */
+}
+
+/* Efeito de hover nos links de navegação com a classe .menu-hover:hover */
+.menu-hover:hover {
+    background-color: #333; /* Define a cor de fundo ao passar o mouse sobre os links de navegação */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Container flexível com logotipo, navegação e ícones sociais -->
+        <div class="flex">
+            <!-- Logotipo da página -->
+            <div class="logo">
+                <img src="img/logo_alpha.png" alt="" class="logo_alpha">
+            </div>
+
+            <!-- Navegação principal -->
+            <nav>
+                <ul>
+                    <!-- Links de navegação com efeito de hover -->
+                    <li><a href="index.html" class="menu-hover">Início</a></li>
+                    <li><a href="grupo-alpha.html" class="menu-hover">Grupo Alpha</a></li>
+                    <li><a href="faculdade.html" class="menu-hover">Faculdade Alpha</a></li>
+                    <li><a href="colegio.html" class="menu-hover">Colégio Alpha</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ícones sociais (Instagram e YouTube) -->
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/alphacolegiooficial/"><img src="img/Design sem nome (1).png" alt="" class="logo-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/c/grupoalphaoficial"><img src="img/Design sem nome (4).png" alt="" class="logo-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contêiner principal -->
+    <div class="container">
+        <!-- Área de notas com título e tabela -->
+        <div class="notas">
+            <h1>Consulta de Notas</h1>
+
+            <!-- Tabela de notas com cabeçalho e corpo -->
+            <table>
+                <thead>
+                    <!-- Cabeçalho da tabela -->
+                    <tr class="tr1">
+                        <th class="th1">Disciplina</th>
+                        <th class="th1">Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas da tabela com dados de disciplinas e notas -->
+                    <tr class="tr1">
+                        <td class="td1">Matemática</td>
+                        <td class="td1">8.5</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">POO</td>
+                        <td class="td1">9.0</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">PostgreSQL</td>
+                        <td class="td1">7.0</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">Front-End</td>
+                        <td class="td1">8.0</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">Redes</td>
+                        <td class="td1">7.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Divisão com classe "cortop" -->
+    <div class="cortop"></div>
+
+    <!-- Rodapé da página -->
+    <div class="rodape" id="rodape">
+        <!-- Tabela com informações de localização e central de atendimento -->
+        <table width="100%">
+            <tr>
+                <th>Onde Estamos</th>
+                <th>Central de Atendimento</th>
+            </tr>
+            <tr>
+                <!-- Informações de localização -->
+                <td class="Proda">
+                    Av. Dr. Cláudio José Gueiros, 2491 <br>
+                    Shopping Norte Janga – Paulista/PE
+                </td>
+
+                <!-- Informações de central de atendimento -->
+                <td class="Proda">
+                    Telefone: (81) 3317.0212 <br>
+                    WhatsApp: (81) 99838.0081
+                </td>
+            </tr>
+        </table>
+
+        <!-- Aviso de direitos autorais no rodapé -->
+        <h5 class="rodape-baixo">
+            ALPHA EDUCAÇÃO- TODOS OS DIREITOS RESERVADOS <br>
+            RUA GERVÁSIO PIRES, 826, RECIFE - PE
+        </h5>
+    </div>
+</body>

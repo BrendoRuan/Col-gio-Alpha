@@ -1,0 +1,198 @@
+
+
+/* Estilos para o corpo da página */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif; /* Define a família de fontes para o corpo da página */
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
+    height: 1000px; /* Define a altura do corpo da página como 1000 pixels */
+    justify-content: space-between; /* Distribui o espaço disponível entre os elementos filhos no eixo principal */
+    max-width: 100%; /* Define a largura máxima do corpo da página como 100% da largura da janela de visualização */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal se houver conteúdo além da largura da janela de visualização */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #fff; /* Define a cor de fundo do cabeçalho como branco */
+    width: 100%; /* Define a largura do cabeçalho como 100% da largura do elemento pai */
+    height: 65px; /* Define a altura do cabeçalho como 65 pixels */
+    position: fixed; /* Fixa o cabeçalho no topo da janela de visualização durante o scroll */
+}
+
+/* Estilos para o contêiner flexível no cabeçalho */
+.flex {
+    justify-content: space-between; /* Distribui o espaço disponível entre os elementos flexíveis no cabeçalho */
+    display: flex; /* Usa o modelo de layout flexível */
+}
+
+/* Estilos para o logotipo no cabeçalho */
+.logo_alpha {
+    width: 125px; /* Define a largura do logotipo como 125 pixels */
+    height: 55px; /* Define a altura do logotipo como 55 pixels */
+    padding: 0;
+    margin-left: 20px; /* Define a margem esquerda do logotipo como 20 pixels */
+
+    position: absolute; /* Permite a posição absoluta dentro do cabeçalho */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit; /* Herda o raio de borda do elemento pai */
+}
+
+/* Estilos para a navegação no cabeçalho */
+nav {
+    margin-left: 110px; /* Define a margem esquerda da navegação como 110 pixels */
+}
+
+/* Estilos para a lista não ordenada na navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilos para os itens da lista na navegação */
+nav ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin-right: 20px; /* Define a margem direita dos itens da lista como 20 pixels */
+}
+
+/* Estilos para links */
+a {
+    color: #333; /* Define a cor do texto dos links como cinza escuro */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+}
+
+/* Estilos para a lista não ordenada em uma div */
+div ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilos para os itens da lista em uma div */
+div ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin-right: 20px; /* Define a margem direita dos itens da lista como 20 pixels */
+}
+
+/* Estilos para links com efeito de hover */
+.menu-hover {
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 10px; /* Adiciona preenchimento de 10 pixels ao redor do link */
+    width: 10px; /* Define a largura do link como 10 pixels */
+    height: 10px; /* Define a altura do link como 10 pixels */
+    border-radius: 25px; /* Define o raio da borda do link como 25 pixels */
+    background-color: #0056b3; /* Define a cor de fundo do link como azul */
+}
+
+/* Efeito de hover para links com a classe "menu-hover" */
+.menu-hover:hover {
+    background-color: #333; /* Altera a cor de fundo do link para cinza escuro quando hover */
+}
+
+/* Estilos para a seção com o ID "banner" */
+#banner {
+    padding-top: 5px; /* Adiciona preenchimento superior de 5 pixels à seção com o ID "banner" */
+    height: 350px; /* Define a altura da seção como 350 pixels */
+    width: 100%; /* Define a largura da seção como 100% do elemento pai */
+    background-color: #fff; /* Define a cor de fundo da seção como branco */
+}
+
+/* Estilos para a classe "banner" */
+.banner {
+    margin-top: 70px; /* Define a margem superior da classe "banner" como 70 pixels */
+    height: 350px; /* Define a altura da classe "banner" como 350 pixels */
+    width: 100%; /* Define a largura da classe "banner" como 100% do elemento pai */
+}
+
+/* Estilos para a seção com a classe "sobre-nos" */
+.sobre-nos {
+    margin-top: 50px; /* Define a margem superior da seção como 50 pixels */
+    height: 450px; /* Define a altura da seção como 450 pixels */
+    background-color: #fff; /* Define a cor de fundo da seção como branco */
+    padding: 20px; /* Adiciona preenchimento interno de 20 pixels à seção */
+}
+
+/* Estilos para o contêiner flexível com a classe "conteudo" */
+.conteudo {
+    display: flex; /* Usa o modelo de layout flexível */
+    padding: 10px; /* Adiciona preenchimento interno de 10 pixels ao contêiner */
+}
+
+/* Estilos para parágrafos dentro do contêiner com a classe "conteudo" */
+p {
+    width: 500px; /* Define a largura do parágrafo como 500 pixels */
+    text-align: justify; /* Justifica o texto dentro do parágrafo */
+    margin-left: 5%; /* Define a margem esquerda do parágrafo como 5% */
+    font-family: "Open Sans"; /* Define a família de fontes para o parágrafo */
+    font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
+    font-style: normal; /* Define o estilo da fonte como normal */
+    font-weight: 400; /* Define o peso da fonte como 400 (normal) */
+    text-transform: none; /* Não aplica transformação de texto (maiúsculas/minúsculas) */
+    line-height: 28px; /* Define a altura da linha como 28 pixels */
+    letter-spacing: 0px; /* Define o espaçamento entre as letras como 0 pixels */
+    color: #333; /* Define a cor do texto como cinza escuro */
+}
+
+/* Estilos para o logotipo menor */
+.logo-menor {
+    margin-left: 35%; /* Define a margem esquerda do logotipo menor como 35% */
+}
+
+/* Estilos para a seção com a classe "historia" */
+.historia {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 80px; /* Define a margem inferior como 80 pixels */
+    margin-top: 50px; /* Define a margem superior como 50 pixels */
+}
+
+/* Estilos para o contêiner flexível com a classe "flex-h" */
+.flex-h {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-evenly; /* Distribui o espaço disponível entre os elementos flexíveis no eixo principal */
+}
+
+/* Estilos para a div com a classe "grupo-alpha" */
+.grupo-alpha {
+    background-color: #1e73be; /* Define a cor de fundo como azul */
+    width: 80px; /* Define a largura como 80 pixels */
+    border-radius: 10px; /* Define o raio da borda como 10 pixels */
+}
+
+/* Estilos para a div com a classe "grupo-alpha-2" */
+.grupo-alpha-2 {
+    background-color: #1e73be; /* Define a cor de fundo como azul */
+    width: 105px; /* Define a largura como 105 pixels */
+    border-radius: 10px; /* Define o raio da borda como 10 pixels */
+}
+
+/* Estilos para a div com a classe "grupo-alpha-3" */
+.grupo-alpha-3 {
+    background-color: #1e73be; /* Define a cor de fundo como azul */
+    width: 90px; /* Define a largura como 90 pixels */
+    border-radius: 10px; /* Define o raio da borda como 10 pixels */
+}
+
+/* Estilos para a divisão com a classe "cortop" */
+.cortop {
+    background-color: #1e73be; /* Define a cor de fundo como azul */
+    height: 35px; /* Define a altura como 35 pixels */
+}
+
+/* Estilos para o rodapé da página */
+.rodape {
+    height: 250px; /* Define a altura do rodapé como 250 pixels */
+    background-color: #1e73be; /* Define a cor de fundo do rodapé como azul */
+}
+
+/* Estilos para a classe "Proda" no rodapé */
+.Proda {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilos para o texto no rodapé */
+.rodape-baixo {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 100px; /* Define a margem superior do texto como 100 pixels */
+}

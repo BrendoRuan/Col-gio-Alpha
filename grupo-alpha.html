@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  nome = "description" content="texto,texto,texto">
+    <meta nome ="viewport" content="Width=device=width, initial-scalet=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta nome="keywords" content="programação,html,css,javascript">
+    <meta name="Brendo" contente="faculdade alpha">
+    <title>Grupo Alpha</title>
+    <style>
+        /* Definições gerais para o corpo da página */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 300px;  /* Altura fixa para o corpo da página */
+    max-width: 100%;  /* Largura máxima igual à largura do viewport */
+    overflow-x: hidden;  /* Oculta a barra de rolagem horizontal */
+    overflow-y: hidden;  /* Oculta a barra de rolagem vertical */
+}
+
+/* Estilo do cabeçalho fixo */
+header {
+    background-color: #fff;  /* Cor de fundo branca */
+    width: 100%;  /* Largura total da página */
+    height: 65px;  /* Altura fixa do cabeçalho */
+    position: fixed;  /* Cabeçalho fixo na parte superior */
+}
+
+/* Estilo para layout flexível */
+.flex {
+    justify-content: space-between;  /* Alinha os itens com espaço entre eles */
+    display: flex;  /* Usa o layout flexível */
+}
+
+/* Estilo para o logotipo */
+.logo_alpha {
+    width: 125px;
+    height: 55px;
+    padding: 0;
+    margin-left: 20px;
+    position: absolute;  /* Posicionamento absoluto dentro do cabeçalho */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;  /* Herda a borda arredondada do layout flexível */
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    margin-left: 180px;  /* Margem à esquerda para ajustar a posição */
+}
+
+/* Estilo para a lista não ordenada na barra de navegação */
+nav ul {
+    list-style-type: none;  /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+/* Estilo para cada item da lista na barra de navegação */
+nav ul li {
+    display: inline;  /* Exibe os itens horizontalmente */
+    margin-right: 20px;  /* Margem à direita entre os itens */
+}
+
+/* Estilo para links de navegação */
+a {
+    color: #333;  /* Cor do texto dos links */
+    text-decoration: none;  /* Remove a decoração de texto sublinhado */
+}
+
+/* Estilo para a lista não ordenada dentro de uma div */
+div ul {
+    list-style-type: none;  /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+/* Estilo para cada item da lista dentro de uma div */
+div ul li {
+    display: inline;  /* Exibe os itens horizontalmente */
+    margin-right: 20px;  /* Margem à direita entre os itens */
+}
+
+/* Estilo para a seção "conteudo-grupo-alpha" */
+.conteudo-grupo-alpha {
+    padding: 50px;  /* Espaçamento interno de 50 pixels */
+    width: 100%;  /* Largura total da página */
+    height: 250px;  /* Altura fixa da seção */
+}
+
+/* Estilo para o layout flexível dentro da seção "conteudo-grupo-alpha" */
+.flex-grupo {
+    height: 300px;  /* Altura do layout flexível */
+    display: flex;  /* Usa o layout flexível */
+    align-items: center;  /* Alinha os itens verticalmente ao centro */
+    justify-content: space-around;  /* Alinha os itens com espaço ao redor */
+}
+
+/* Estilo para o título "h2" na seção "conteudo-grupo-alpha" */
+h2 {
+    text-align: center;  /* Alinhamento central do texto */
+}
+
+/* Estilo para parágrafos "p" na seção "conteudo-grupo-alpha" */
+p {
+    text-align: center;  /* Alinhamento central do texto */
+    width: 500px;  /* Largura fixa do parágrafo */
+}
+
+/* Estilo para a barra superior "cortop" */
+.cortop {
+    margin-top: 130px;  /* Margem superior para ajustar a posição */
+    background-color: #1e73be;  /* Cor de fundo azul */
+    height: 35px;  /* Altura fixa da barra superior */
+}
+
+/* Estilo para o rodapé "rodape" */
+.rodape {
+    height: 250px;  /* Altura fixa do rodapé */
+    background-color: #1e73be;  /* Cor de fundo azul */
+}
+
+/* Estilo para texto centralizado "Proda" no rodapé */
+.Proda {
+    text-align: center;  /* Alinhamento central do texto */
+}
+
+/* Estilo para texto no rodapé "rodape-baixo" */
+.rodape-baixo {
+    text-align: center;  /* Alinhamento central do texto */
+    margin-top: 100px;  /* Margem superior para ajustar a posição */
+}
+
+/* Estilo para links de navegação no modo hover */
+.menu-hover {
+    color: #fff;  /* Cor do texto alterada para branco */
+    padding: 10px;  /* Espaçamento interno de 10 pixels */
+    width: 10px;  /* Largura fixa de 10 pixels */
+    height: 10px;  /* Altura fixa de 10 pixels */
+    border-radius: 25px;  /* Borda arredondada */
+    background-color: #0056b3;  /* Cor de fundo azul */
+}
+
+/* Estilo para links de navegação no modo hover */
+.menu-hover:hover {
+    background-color: #333;  /* Cor de fundo alterada para cinza escuro no modo hover */
+}
+
+    </style>
+</head>
+<!-- Início do corpo da página -->
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Estrutura flexível para organizar o conteúdo do cabeçalho -->
+        <div class="flex">
+            <!-- Logotipo da página -->
+            <div class="logo">
+                <img src="img/logo_alpha.png" alt="" class="logo_alpha">
+            </div>
+            
+            <!-- Navegação principal -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="menu-hover">Início</a></li>
+                    <li><a href="faculdade.html" class="menu-hover">Faculdade Alpha</a></li>
+                    <li><a href="colegio.html" class="menu-hover">Colégio Alpha</a></li>
+                    <li><a href="login.html" class="menu-hover">Login</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Ícones de redes sociais -->
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/alphacolegiooficial/"><img src="img/Design sem nome (1).png" alt="" class="logo-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/c/grupoalphaoficial"><img src="img/Design sem nome (4).png" alt="" class="logo-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da seção "Grupo Alpha" -->
+    <div class="conteudo-grupo-alpha">
+        <!-- Título da seção -->
+        <h2>Grupo Alpha</h2>
+        <!-- Estrutura flexível para organizar o conteúdo da seção -->
+        <div class="flex-grupo">
+            <!-- Parágrafo com informações sobre o Grupo Alpha -->
+            <p>
+                O Grupo Alpha, fundado em maio de 2012, vem acumulando experiências exitosas na execução de serviços educacionais, tendo como principal meta oportunizar o crescimento pessoal e profissional de seus alunos. <br>
+                Sempre prezando pela excelência na educação, a Alpha busca os melhores profissionais para formar sua equipe, adequando os seus serviços ao perfil de seu público, atendendo as necessidades do mercado de trabalho e fomentando a máxima qualidade exigida pela instituição. <br>
+                O Grupo Alpha possui estrutura moderna, profissionais e corpo docente de alta performance, treinados também, para realizar um atendimento humanizado e coerente. Com diversos polos espalhados na região Metropolitana do Recife, em cidades do interior de Pernambuco, bem como, está presente em outros estados.
+            </p>
+            
+            <!-- Conteúdo de imagem, possivelmente o logotipo menor do Grupo Alpha -->
+            <div class="conteudo-imagem">
+                <img src="img/logo-menor.png" alt="" class="logo-grupo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Divisão que cria um corte superior na página -->
+    <div class="cortop"></div>
+
+    <!-- Rodapé da página -->
+    <div class="rodape" id="rodape-grupo">
+        <!-- Tabela contendo informações de contato e localização -->
+        <table width="100%">
+            <tr>
+                <th>Onde Estamos</th>
+                <th>Central de Atendimento</th>
+            </tr>
+            <tr>
+                <!-- Informações sobre o endereço -->
+                <td class="Proda">
+                    Av. Dr. Cláudio José Gueiros, 2491 <br>
+                    Shopping Norte Janga – Paulista/PE
+                </td>
+                
+                <!-- Informações sobre os contatos -->
+                <td class="Proda">
+                    Telefone: (81) 3317.0212 <br>
+                    WhatsApp: (81) 99838.0081
+                </td>
+            </tr>
+        </table>
+        
+        <!-- Texto adicional no rodapé -->
+        <h5 class="rodape-baixo">
+            ALPHA EDUCAÇÃO - TODOS OS DIREITOS RESERVADOS <br>
+            RUA GERVÁSIO PIRES, 826, RECIFE - PE
+        </h5>
+    </div>
+</body>
+</html>

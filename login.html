@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  nome = "description" content="texto,texto,texto">
+<meta nome ="viewport" content="Width=device=width, initial-scalet=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta nome="keywords" content="programação,html,css,javascript">
+<meta name="Brendo Ruan" contente="faculdade alpha">
+<title>Login</title>
+
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Contêiner flexível para organizar elementos -->
+        <div class="flex">
+            <!-- Logotipo do Grupo Alpha -->
+            <div class="logo">
+                <img src="img/logo_alpha.png" alt="" class="logo_alpha">
+            </div>
+            <!-- Navegação principal -->
+            <nav>
+                <ul>
+                    <!-- Links de navegação -->
+                    <li><a href="index.html" class="menu-hover">Início</a></li>
+                    <li><a href="grupo-alpha.html" class="menu-hover">Grupo Alpha</a></li>
+                    <li><a href="faculdade.html" class="menu-hover">Faculdade Alpha</a></li>
+                    <li><a href="colegio.html" class="menu-hover">Colégio Alpha</a></li>
+                </ul>
+            </nav>
+            <!-- Ícones de redes sociais -->
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/alphacolegiooficial/"><img src="img/Design sem nome (1).png" alt="" class="logo-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/c/grupoalphaoficial"><img src="img/Design sem nome (4).png" alt="" class="logo-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formulário de login -->
+    <form action="/submit_login" method="post">
+        <h2>Login:</h2>
+        <div class="container">
+            <!-- Campo de entrada para o nome de usuário -->
+            <label for="uname"><b>Usuário</b></label>
+            <input type="text" placeholder="Nome" name="namo" required>
+
+            <!-- Campo de entrada para a senha -->
+            <label for="psw"><b>Senha:</b></label>
+            <input type="password" placeholder="Senha" name="Senha" required>
+
+            <!-- Escolha entre Professor e Aluno -->
+            <label>Escolha a entrada:</label>
+            <div style="display: flex;">
+                <!-- Botão para login como Professor -->
+                <button class="button" type="submit" for="prof"><a href="professor.html" style="color: #fff;">Professor</a></button>
+                <!-- Botão para login como Aluno -->
+                <button class="button2" type="submit" for="prof"><a href="aluno.html" style="color: #fff;">Aluno</a></button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Divisão de separação superior -->
+    <div class="cortop"></div>
+
+    <!-- Rodapé da página -->
+    <div class="rodape" id="rodape">
+        <!-- Tabela com informações de localização e contato -->
+        <table width="100%">
+            <tr>
+                <th>Onde Estamos</th>
+                <th>Central de Atendimento</th>
+            </tr>
+            <tr>
+                <!-- Endereço físico -->
+                <td class="Proda">
+                    Av. Dr. Cláudio José Gueiros, 2491 <br>
+                    Shopping Norte Janga – Paulista/PE
+                </td>
+                <!-- Informações de contato -->
+                <td class="Proda">
+                    Telefone: (81) 3317.0212 <br>
+                    WhatsApp: (81) 99838.0081
+                </td>
+            </tr>
+        </table>
+        <!-- Informações adicionais no rodapé -->
+        <h5 class="rodape-baixo">
+            ALPHA EDUCAÇÃO- TODOS OS DIREITOS RESERVADOS <br>
+            RUA GERVÁSIO PIRES, 826, RECIFE - PE
+        </h5>
+    </div>
+
+</body>
+</html>

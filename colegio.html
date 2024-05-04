@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta  nome = "description" content="texto,texto,texto">
+<meta nome ="viewport" content="Width=device=width, initial-scalet=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta nome="keywords" content="programação,html,css,javascript">
+<meta name="Brendo" contente="faculdade alpha">
+<title>Colégio Alpha</title>
+    <style>
+        /* Estilos para o corpo da página */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif; /* Define a família de fontes para o corpo da página */
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento padrão do corpo da página */
+    height: 300px; /* Define a altura do corpo da página como 300 pixels */
+    max-width: 100%; /* Define a largura máxima do corpo da página como 100% da largura da janela de visualização */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal se houver conteúdo além da largura da janela de visualização */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #fff; /* Define a cor de fundo do cabeçalho como branco */
+    width: 100%; /* Define a largura do cabeçalho como 100% da largura do elemento pai */
+    height: 65px; /* Define a altura do cabeçalho como 65 pixels */
+    position: fixed; /* Fixa o cabeçalho no topo da janela de visualização durante o scroll */
+}
+
+/* Estilos para o contêiner flexível no cabeçalho */
+.flex {
+    justify-content: space-between; /* Distribui o espaço disponível entre os elementos flexíveis no cabeçalho */
+    display: flex; /* Usa o modelo de layout flexível */
+}
+
+/* Estilos para o logotipo no cabeçalho */
+.logo_alpha {
+    width: 125px; /* Define a largura do logotipo como 125 pixels */
+    height: 55px; /* Define a altura do logotipo como 55 pixels */
+    padding: 0;
+    margin-left: 20px; /* Define a margem esquerda do logotipo como 20 pixels */
+
+    position: absolute; /* Permite a posição absoluta dentro do cabeçalho */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit; /* Herda o raio de borda do elemento pai */
+}
+
+/* Estilos para a navegação no cabeçalho */
+nav {
+    margin-left: 180px; /* Define a margem esquerda da navegação como 180 pixels */
+}
+
+/* Estilos para a lista não ordenada na navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilos para os itens da lista na navegação */
+nav ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin-right: 20px; /* Define a margem direita dos itens da lista como 20 pixels */
+}
+
+/* Estilos para links */
+a {
+    color: #333; /* Define a cor do texto dos links como cinza escuro */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+}
+
+/* Estilos para a lista não ordenada em uma div */
+div ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilos para os itens da lista em uma div */
+div ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin-right: 20px; /* Define a margem direita dos itens da lista como 20 pixels */
+}
+
+/* Estilos para o conteúdo específico do Colégio Alpha */
+.conteudo-colegio {
+    padding: 50px; /* Adiciona preenchimento interno de 50 pixels ao conteúdo do Colégio Alpha */
+    width: 100%; /* Define a largura do conteúdo do Colégio Alpha como 100% do elemento pai */
+    height: 250px; /* Define a altura do conteúdo do Colégio Alpha como 250 pixels */
+}
+
+/* Estilos para o contêiner flexível dentro do conteúdo do Colégio Alpha */
+.flex-colegio {
+    height: 300px; /* Define a altura do contêiner flexível como 300 pixels */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-around; /* Distribui o espaço disponível ao redor dos itens no contêiner flexível */
+    padding-bottom: 100px; /* Adiciona preenchimento inferior de 100 pixels ao contêiner flexível */
+}
+
+/* Estilos para o título h2 dentro do conteúdo do Colégio Alpha */
+h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding-bottom: 50px; /* Adiciona margem inferior de 50 pixels ao título h2 */
+}
+
+/* Estilos para parágrafos dentro do conteúdo do Colégio Alpha */
+p {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    width: 650px; /* Define a largura do parágrafo como 650 pixels */
+    height: 400px; /* Define a altura do parágrafo como 400 pixels */
+}
+
+/* Estilos para a divisão com a classe "cortop" */
+.cortop {
+    margin-top: 250px; /* Define a margem superior da divisão como 250 pixels */
+    background-color: #1e73be; /* Define a cor de fundo da divisão como azul */
+    height: 35px; /* Define a altura da divisão como 35 pixels */
+}
+
+/* Estilos para o rodapé da página */
+.rodape {
+    height: 250px; /* Define a altura do rodapé como 250 pixels */
+    background-color: #1e73be; /* Define a cor de fundo do rodapé como azul */
+}
+
+/* Estilos para a classe "Proda" no rodapé */
+.Proda {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilos para o texto no rodapé */
+.rodape-baixo {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 100px; /* Define a margem superior do texto como 100 pixels */
+}
+
+/* Estilos para links com efeito de hover */
+.menu-hover {
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 10px; /* Adiciona preenchimento de 10 pixels ao redor do link */
+    width: 10px; /* Define a largura do link como 10 pixels */
+    height: 10px; /* Define a altura do link como 10 pixels */
+    border-radius: 25px; /* Define o raio da borda do link como 25 pixels */
+    background-color: #0056b3; /* Define a cor de fundo do link como azul */
+}
+
+/* Efeito de hover para links com a classe "menu-hover" */
+.menu-hover:hover {
+    background-color: #333; /* Altera a cor de fundo do link para cinza escuro quando hover */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Container flexível com logotipo, navegação e ícones sociais -->
+        <div class="flex">
+            <!-- Logotipo da página -->
+            <div class="logo">
+                <img src="img/logo_alpha.png" alt="" class="logo_alpha">
+            </div>
+
+            <!-- Navegação principal -->
+            <nav>
+                <ul>
+                    <!-- Links de navegação com efeito de hover -->
+                    <li><a href="index.html" class="menu-hover">Início</a></li>
+                    <li><a href="grupo-alpha.html" class="menu-hover">Grupo Alpha</a></li>
+                    <li><a href="faculdade.html" class="menu-hover">Faculdade Alpha</a></li>
+                    <li><a href="login.html" class="menu-hover">Login</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ícones sociais (Instagram e YouTube) -->
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/alphacolegiooficial/"><img src="img/Design sem nome (1).png" alt="" class="logo-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/c/grupoalphaoficial"><img src="img/Design sem nome (4).png" alt="" class="logo-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo específico para o Colégio Alpha -->
+    <div class="conteudo-colegio">
+        <!-- Título secundário -->
+        <h2>Colégio Alpha</h2>
+        
+        <!-- Container flexível com texto e imagem -->
+        <div class="flex-colegio">
+            <!-- Parágrafo com informações sobre o Colégio Alpha -->
+            <p>
+                No ano de 2018 o Grupo Alpha com perspectiva de expansão de suas ramificações na área de educação, inicia o seu projeto na Educação Básica, ofertando os níveis de Educação Infantil e Fundamental, com uma proposta sócio-interacionista que foi cuidadosamente elaborada, considerando as Diretrizes Curriculares Nacionais para a Educação Infantil/Ensino Fundamental e a Base Nacional Curricular Comum. <br> <br>
+                A estrutura é arrojada e moderna estrategicamente pensada para o estímulo do desenvolvimento através de vivências práticas e de interação, mas sempre respeitando a individualidade de cada estudante e trabalhando as suas limitações. <br> <br>
+                Acreditamos que a aprendizagem ocorre, com mais facilidade, quando o estudante interage com meio e com os pares, uma vez que, é através dos outros que as relações entre sujeito e objeto de conhecimento são estabelecidas de forma ativa. Ele deve pensar, opinar, apresentar hipóteses, trabalhar em grupo, fazer comparações, observações, interagindo de maneira autônoma com a equipe e com o meio. <br> <br>
+                O Colégio Alpha, capacita o estudante para a vida, considerando os 4 pilares da educação: aprender a conhecer, aprender a fazer, aprender a viver com os outros e aprender a ser. Estes são itens fundamentais para a transmissão da informação e da comunicação adaptada à sociedade, e vital para a manutenção de uma sociedade justa e democrática.
+            </p>
+    
+            <!-- Imagem do logo do grupo -->
+            <div>
+                <img src="img/logo-menor.png" alt="" class="logo-grupo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Divisão com classe "cortop" -->
+    <div class="cortop"></div>
+
+    <!-- Rodapé da página -->
+    <div class="rodape" id="rodape">
+        <!-- Tabela com informações de localização e central de atendimento -->
+        <table width="100%">
+            <tr>
+                <th>Onde Estamos</th>
+                <th>Central de Atendimento</th>
+            </tr>
+            <tr>
+                <!-- Informações de localização -->
+                <td class="Proda">
+                    Av. Dr. Cláudio José Gueiros, 2491 <br>
+                    Shopping Norte Janga – Paulista/PE
+                </td>
+
+                <!-- Informações de central de atendimento -->
+                <td class="Proda">
+                    Telefone: (81) 3317.0212 <br>
+                    WhatsApp: (81) 99838.0081
+                </td>
+            </tr>
+        </table>
+
+        <!-- Aviso de direitos autorais no rodapé -->
+        <h5 class="rodape-baixo">
+            ALPHA EDUCAÇÃO- TODOS OS DIREITOS RESERVADOS <br>
+            RUA GERVÁSIO PIRES, 826, RECIFE - PE
+        </h5>
+    </div>
+</body>
+</html>
